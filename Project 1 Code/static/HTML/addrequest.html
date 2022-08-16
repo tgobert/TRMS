@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/tuition.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Login</title>
+    <style>
+        body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+        .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+        .fa-anchor,.fa-coffee {font-size:200px}
+        #headerDiv {
+            padding: 60px;
+            text-align: center;
+            background: #1abc9c;
+            color: white;
+            font-size: 30px;
+            }
+            /* margin-top: 100px;
+            text-align: center;
+            align-items: center;
+            color: black;
+            font-weight: 900;
+            border: 3px solid lightgreen;
+            background-color: lightgreen; */
+        
+        /* h3 {
+            margin-top: 100px;
+            text-align: center;
+            align-items: center;
+            color: black;
+        } */
+        body {
+            background-color: (161, 238, 187);
+        }
+        input, option, select {
+            display: inline-block;
+            width: 200px;
+            background-color: white;
+            color: black;
+        }
+        input, select, button {
+            float: right;
+            margin-right: 40%;
+        }
+        label {
+            margin-left: 35%;
+        }
+
+    </style>
+</head>
+
+<body onload="getBanner()"></body>
+
+    <div id="headerDiv">
+    </div>
+
+    <br><label>Start Date:</label>
+    <input id="dateTime" type="date" type="datetime-local"><br>
+
+    <br><label>Institution:</label>
+    <input id="inst" type="text"><br>
+
+    <br><label>Course:</label>
+    <input id="course" type="text"><br>
+
+    <br><label>Price:</label>
+    <input id="price" type="number"><br>
+
+    <br><label for="gradeForm">Grade Format:</label>
+    <select id="gradeForm" name="gradeForm" id="GradeForm">
+        <option value="A-C">A-C</option>
+        <option value="P/F">P/F</option>
+        <option value="Complete/Incomplete">Complete/Incomplete</option>
+    </select><br>
+
+    <br><label for="eventType">Event Type:</label>
+    <select id="eventType" name="eventType" id="eventType">
+        <option value="University">University</option>
+        <option value="Seminar">Seminar</option>
+        <option value="Certification Prep">Certification Prep</option>
+        <option value="Certification">Certification</option>
+        <option value="Technical Training">Technical Training</option>
+        <option value="Other">Other</option>
+    </select><br>
+
+    <br><label>Justification:</label>
+    <input id="justif" type="text"><br>
+
+    <br><label>Work Hours Missed:</label>
+    <input id="hours" type="number"><br>
+
+    <br><button type="button" onclick="addRequest()">Add Request</button>
+
+    <p id="blankFields">        
+    </p>
+
+    <xml><script src="../Scripts/reimburseApp.js"></script></xml>
+</body>
+</html>
